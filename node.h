@@ -12,10 +12,10 @@ class Node {
   ~Node();
 
   Node* getNext();
-  data getData();
+  char getData();
 
   void setNext(Node* nextNode);
-  void setData(int newData);
+  void setData(char newData);
   
  private:
   char data;

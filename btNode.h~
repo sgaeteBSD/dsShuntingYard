@@ -8,18 +8,21 @@ using namespace std;
 
 class Node {
  public:
-  Node(int newVal);
+  Node(char newData);
   ~Node();
 
-  Node* getNext();
-  int getVal();
+  Node* getLeft();
+  Node* getRight();
+  char getData();
 
-  void setNext(Node* nextNode);
-  void setVal(int newVal);
+  void setLeft(Node* leftNode);
+  void setRight(Node* rightNode);
+  void setData(char newData);
   
  private:
-  int value;
-  Node* next;
+  char data;
+  Node* left;
+  Node* right;
 };
 
 #endif

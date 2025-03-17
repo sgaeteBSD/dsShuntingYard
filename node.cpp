@@ -17,12 +17,12 @@ Node* Node::getNext() {
   return next;
   // return the next variable when going to the next node.
 }
-int Node::getData() {
+char Node::getData() {
   return data;
 }
 void Node::setNext(Node* nextNode) {
   next = nextNode;
 }
 void Node::setData(char newData) {
-  value = newVal;
+  data = newData;
 }

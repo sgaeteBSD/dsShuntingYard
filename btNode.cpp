@@ -4,32 +4,32 @@
 
 using namespace std;
 
-Node::Node(char newData) {
+BTNode::BTNode(char newData) {
   // constructor
   data = newData;
   left = NULL; // setting pointer to null
   right = NULL;
 }
-Node::~Node(){
+BTNode::~BTNode(){
   // destructor
   left = NULL;
   right = NULL;
 }
-Node* Node::getLeft() {
+BTNode* BTNode::getLeft() {
   return left;
 }
-Node* Node::getRight() {
+BTNode* BTNode::getRight() {
   return right;
 }
-int Node::getData() {
+char BTNode::getData() {
   return data;
 }
-void Node::setLeft(Node* leftNode) {
+void BTNode::setLeft(BTNode* leftNode) {
   left = leftNode;
 }
-void Node::setRight(Node* rightNode) {
+void BTNode::setRight(BTNode* rightNode) {
   right = rightNode;
 }
-void Node::setData(char newData) {
+void BTNode::setData(char newData) {
   data = newData;
 }

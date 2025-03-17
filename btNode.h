@@ -1,28 +1,28 @@
-#ifndef NODE_H
-#define NODE_H
+#ifndef BTNODE_H
+#define BTNODE_H
 
 #include <iostream>
 #include <cstring>
 
 using namespace std;
 
-class Node {
+class BTNode {
  public:
-  Node(char newData);
-  ~Node();
+  BTNode(char newData);
+  ~BTNode();
 
-  Node* getLeft();
-  Node* getRight();
+  BTNode* getLeft();
+  BTNode* getRight();
   char getData();
 
-  void setLeft(Node* leftNode);
-  void setRight(Node* rightNode);
+  void setLeft(BTNode* leftNode);
+  void setRight(BTNode* rightNode);
   void setData(char newData);
   
  private:
   char data;
-  Node* left;
-  Node* right;
+  BTNode* left;
+  BTNode* right;
 };
 
 #endif
